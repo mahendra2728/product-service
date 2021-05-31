@@ -29,6 +29,7 @@ public class ProductController {
 	
 	@GetMapping("products")
 	public ResponseEntity<List<Product>> getProductList(){
+		System.out.println("test");
 		return new ResponseEntity<List<Product>>(products, HttpStatus.OK);
 	}
 }
